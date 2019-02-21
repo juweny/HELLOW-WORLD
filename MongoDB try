@@ -1,0 +1,14 @@
+> use media
+switched to media
+> db.createCollection("media", { capped : true, autoIndexId : true, size : 
+   6142800, max : 10000 } )
+   
+>db.col.insert({title: 'Adam Music CD', 
+    description: 'this is a collection for adam',
+    by: 'adam',
+    url: 'http://www.ADDDAMADNA.com',
+    tags: ['mongodb', 'database', 'NoSQL'],
+    likes: 100
+})   
+   
+> db.media.find(Track.list:{"author": "adam", "CD": "track 2"})
